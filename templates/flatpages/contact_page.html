@@ -1,0 +1,42 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+
+{% block content %}
+<style type="text/css">
+    p {
+        font-family: serif;
+        color: #2b8405;
+    }
+    h2 {
+        font-size: 200%;
+        font-family:  serif;
+        color: #570808;
+    }
+      h3 {
+        font-size: 300%;
+        font-family: serif;
+        color: #2b8405;
+    }
+
+.bg-dark {
+    background-color: #346300 !important;
+}
+hr {
+    background-color: #346300;
+    height: 4px;
+}
+  </style>
+    <h2>{{ flatpage.title }}</h2>
+    <hr>
+    <h3>Наши контакты:</h3>
+<p>
+{{ flatpage.content }}
+</p>
+    <hr>
+<p>
+{{ flatpage.content }}
+</p>
+{% endblock content %}
